@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"errs_10_17\startup_stm32f446xx.o"
+"errs_10_17\main.o"
+"errs_10_17\stm32f4xx_it.o"
+"errs_10_17\stm32f4xx_hal_msp.o"
+"errs_10_17\stm32f4xx_hal_i2c.o"
+"errs_10_17\stm32f4xx_hal_i2c_ex.o"
+"errs_10_17\stm32f4xx_hal_rcc.o"
+"errs_10_17\stm32f4xx_hal_rcc_ex.o"
+"errs_10_17\stm32f4xx_hal_flash.o"
+"errs_10_17\stm32f4xx_hal_flash_ex.o"
+"errs_10_17\stm32f4xx_hal_flash_ramfunc.o"
+"errs_10_17\stm32f4xx_hal_gpio.o"
+"errs_10_17\stm32f4xx_hal_dma_ex.o"
+"errs_10_17\stm32f4xx_hal_dma.o"
+"errs_10_17\stm32f4xx_hal_pwr.o"
+"errs_10_17\stm32f4xx_hal_pwr_ex.o"
+"errs_10_17\stm32f4xx_hal_cortex.o"
+"errs_10_17\stm32f4xx_hal.o"
+"errs_10_17\stm32f4xx_hal_exti.o"
+"errs_10_17\stm32f4xx_hal_tim.o"
+"errs_10_17\stm32f4xx_hal_tim_ex.o"
+"errs_10_17\stm32f4xx_hal_uart.o"
+"errs_10_17\system_stm32f4xx.o"
+--strict --scatter "ERRS_10_17\ERRS_10_17.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ERRS_10_17.map" -o ERRS_10_17\ERRS_10_17.axf
